@@ -28,7 +28,7 @@ Job: [? if in_school : [+ school +]?][? if unemployed and not in_school: None ?]
 
 = Stats
 
-Stress: [+ stress : stress] ([+ stress +]/100)
+Stress: [+ stress : stress +] ([+ stress +]/100)
 
 Hunger: [+ hunger : hunger +]
 
