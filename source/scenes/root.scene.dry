@@ -21,66 +21,37 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2000;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
+// How many actions regarding Relationships have been taken? (Max 2)
+Q.relations_actions = 0;
+// How many actions regarding Occupation or Education have been taken? (Max 3)
+Q.occu_edu_actions = 0;
+// How many actions regarding Hobbies have been taken? (Max 2)
+Q.hobby_actions = 0;
+Q.monthly_income = 0;
+Q.relations_unlocked = 1;
+Q.attribute_manipulation_unlocked = 1;
+Q.attribute_manipulation_locked = 0;
+Q.occu_edu_unlocked = 0;
+Q.hobby_unlocked = 0;
+Q.starting_stress = 10;
+Q.monthly_stress = 2;
 
-// 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
-Q.difficulty = 0;
-Q.historical_mode = 0;
-// old demographics
-Q.old_demographics = 0;
-// use decimals for reichstag seats
-// TODO: not yet implemented
-Q.use_decimals = 0;
-// TODO: detailed difficulty settinigs
-Q.annual_income = 0;
-Q.saves_disabled = 0;
-Q.discard_disabled = 0;
-Q.hand_size = 3;
-Q.starting_dissent = 1; // default dissent = normal
-Q.starting_relations = 1;
-
-// whether or not hindenburg can dismiss the government.
-Q.hindenburg_enabled = 0;
-
-
-
-// party resources
-Q.starting_resources = 2;
-Q.resources = 2;
-// party dues - fundraising income
-Q.starting_dues = 2;
-Q.dues = 2;
-
-// the state of the party
-// overall dissent reduces every increase in party support.
-Q.dissent = 0.05;
-Q.dissent_percent = 5;
-
-// factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
-// should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
-
-// secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
-
-// have we discovered neorevisionism?
-Q.neorevisionism = 0;
+// friends
+Q.friends = ['friend1', 'friend2', 'friend3', 'friend4', 'friend5'];
+Q.friend_1_filled = 0;
+Q.friend1_name = "0";
+Q.friend_2_filled = 0;
+Q.friend2_name = "0";
+Q.friend_3_filled = 0;
+Q.friend3_name = "0";
+Q.friend_4_filled = 0;
+Q.friend4_name = "0";
+Q.friend_5_filled = 0;
+Q.friend5_name = "0";
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;

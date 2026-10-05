@@ -21,9 +21,6 @@
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
   // TODO; 
-  window.loadMod = function(url) {
-      ui.loadGame(url);
-  };
 
   window.showStats = function() {
     if (window.dendryUI.dendryEngine.state.sceneId.startsWith('library')) {
@@ -33,14 +30,13 @@
     }
   };
 
-  window.showMods = function() {
-    window.hideOptions();
-    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('mod_loader')) {
+  window.showSkills = function() {
+    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('skills_tree')) {
         window.dendryUI.dendryEngine.goToScene('backSpecialScene');
     } else {
-        window.dendryUI.dendryEngine.goToScene('mod_loader');
+        window.dendryUI.dendryEngine.goToScene('skills_tree');
     }
-  };
+  }
 
   // TODO: update audio displays
   window.updateAudio = function(song) {
@@ -236,10 +232,6 @@
   };
 
   window.changeTab = function(newTab, tabId) {
-      if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-          window.alert('Polls are not available in historical mode.');
-          return;
-      }
       var tabButton = document.getElementById(tabId);
       var tabButtons = document.getElementsByClassName('tab_button');
       for (i = 0; i < tabButtons.length; i++) {

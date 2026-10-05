@@ -171,10 +171,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                   <td>
-                        <button onclick="window.showMods();">Mods</button>
-                    </td>
-
                 </tr>
             </table>
         </div>
@@ -338,11 +334,12 @@
     <div id='page'>
         <div id="mid_panel">
             <header>
-                <h1 id="game-title">Social Democracy: An Alternate History</h1>
-                <h2 id="game-author">Autumn Chen</h2>
+                <h1 id="game-title">Onlife: An Online Life Siulator</h1>
+                <h2 id="game-author">WolfgangVJ</h2>
 
                 <div id="header-links">
                     <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
+                    <a id="skills-link" onclick="window.showSkills();" href="#">Skill Tree</a>
                     <a onclick="dendryUI.showSaveSlots();" href="#">Save/Load</a>
                     <a onclick="window.showOptions();" href="#">Options</a>
                 </div>
@@ -350,10 +347,10 @@
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
                     <div class="tab_container">
-                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
-                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
-                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
+                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Overview</button>
+                        <button class="tab_button" id="skills_tab" onclick="window.changeTab('status.skills', 'skills_tab');">Skills</button>
+                        <button class="tab_button" id="relations" onclick="window.changeTab('status.relations', 'relations_tab');">Relations</button>
+                        <button class="tab_button" id="placeholder_tab">Placeholder</button>
                     </div>
                     <div id="qualities">
                     </div>
@@ -365,16 +362,14 @@
             </div>
 
             <footer>
-      <!--
       <p>
         <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
         <a onclick="window.quickSave();" href="#">Quick Save</a>
         <a onclick="window.quickLoad();" href="#">Quick Load</a>
       </p>
 
-      &copy; 2021 Autumn Chen.
+      &copy; 2026 WolfgangVJ.
       Made with <a href="https://github.com/aucchen/dendry">Dendry</a>.
-      -->
             </footer>
         </div>
     </div>

@@ -45,9 +45,11 @@ Looks: [+ lks_score +]/100
 Luck: [+ luk_score +]/100
 ### add tooltip
 
+@skills
+
 = Skills
 
-### [? if skill : [+ skill +]?]
+### [? if skill : [+ skill +]?] do this repeating
 
 @relations
 
@@ -60,3 +62,15 @@ Luck: [+ luk_score +]/100
 [? if own_pet : [+ pet_name +]: [+ pet_rel : relations +] Age: [+ pet_age +]?]
 
 = Friends
+
+[? if friend_1_filled : [+ friend1_name +]: [+ friend1_rel : relations +] Age: [+ friend1_age +]?]
+
+[? if friend_2_filled : [+ friend2_name +]: [+ friend2_rel : relations +] Age: [+ friend2_age +]?]
+
+[? if friend_3_filled : [+ friend3_name +]: [+ friend3_rel : relations +] Age: [+ friend3_age +]?]
+
+[? if friend_4_filled : [+ friend4_name +]: [+ friend4_rel : relations +] Age: [+ friend4_age +]?]
+
+[? if friend_5_filled : [+ friend5_name +]: [+ friend5_rel : relations +] Age: [+ friend5_age +]?]
+
+### Add Go-To-On-Click menus for each Friend and Family Member
