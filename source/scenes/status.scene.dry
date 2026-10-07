@@ -5,7 +5,7 @@ is-special: true
 = General Overview
 
 Date: [+ month : month +] [+ year +]
-Age: [+ month +][? if month = 1 : Month ?][? if month > 1 : Months ?][+ y_age +][? if year = 1 : Year ?][? if month > 1 or month = 0 : Years ?]
+Age: [+ month_age +][? if month_age = 1 : Month ?][? if month_age > 1 : Months ?][+ y_age +][? if year_age = 1 : Year ?][? if year_age > 1 or year_age = 0 : Years ?]
 
 Money available: [+ money +]
 Assets worth: [+ asset_money +]
