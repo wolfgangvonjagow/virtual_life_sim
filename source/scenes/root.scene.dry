@@ -23,6 +23,8 @@ Q.started = 1;
 Q.time = 1;
 Q.year = 2000;
 Q.month = 1;
+Q.month_age = 1;
+Q.year_age = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 // How many actions regarding Relationships have been taken? (Max 2)
@@ -34,7 +36,9 @@ Q.hobby_actions = 0;
 Q.monthly_income = 0;
 Q.relations_unlocked = 1;
 Q.attribute_manipulation_unlocked = 1;
+// Only available when you're a baby, mostly.
 Q.attribute_manipulation_locked = 0;
+// Locks when you are no longer a baby
 Q.occu_edu_unlocked = 0;
 Q.hobby_unlocked = 0;
 Q.starting_stress = 10;
