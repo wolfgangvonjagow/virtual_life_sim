@@ -1,18 +1,6 @@
 title: My Life
 new-page: true
 is-special: true
-on-arrival: {!
-if (Q.unemployed) {
-    Q.unemployed_2 = Q.unemployed.toFixed(1);
-}
-if (Q.inflation) {
-    Q.inflation_2 = Q.inflation.toFixed(1);
-}
-Q.economic_growth_2 = '0';
-if (Q.economic_growth) {
-    Q.economic_growth_2 = Q.economic_growth.toFixed(1);
-}
-!}
 
 = General Overview
 
@@ -20,7 +8,7 @@ Date: [+ month : month +] [+ year +]
 Age: [+ month +][? if month = 1 : Month ?][? if month > 1 : Months ?][+ y_age +][? if year = 1 : Year ?][? if month > 1 or month = 0 : Years ?]
 
 Money available: [+ money +]
-Asset worth: [+ asset_money +]
+Assets worth: [+ asset_money +]
 Money in savings: [+ savings_money +]
 Total Worth: [+ total_money +]
 
@@ -32,7 +20,7 @@ Stress: [+ stress : stress +] ([+ stress +]/100)
 
 Hunger: [+ hunger : hunger +]
 
-Rent: [? if paying_rent : [+ rent_cost +]?]
+Rent: [? if paying_rent : [+ rent_cost +]?][? if not paying_rent : 0$ ?]
 
 Popularity: [+ pop_score +]/100
 
