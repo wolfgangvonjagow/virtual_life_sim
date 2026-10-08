@@ -22,7 +22,7 @@ if (Q.var1 == 'Example' && Q.var2 == 10 && Q.var3) {
 
 
 @example_ending
-view-if: not false
+view-if: false = 0
 title: Example Title
 tags: endings
 go-to: eg_menu
