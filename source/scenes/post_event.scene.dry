@@ -2,10 +2,10 @@ title: Post Event
 new-page: true
 on-arrival: {!
 
-if (Q.month_actions) >= 3 {
+if (Q.month_actions >= 3) {
     Q.month_actions = 0;
     Q.month += 1;
-    if (Q.month) >= 13 {
+    if (Q.month >= 13) {
     Q.month = 1;
     Q.year += 1;
     }
