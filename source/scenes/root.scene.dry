@@ -12,7 +12,7 @@ go-to: start_menu_2
 
 - @start: Start game
 - @credits: Credits
-- @game_over.achievements
+- @game_over.eg_menu.achievements
 
 
 @start
