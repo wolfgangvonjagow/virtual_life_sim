@@ -18,6 +18,7 @@ if (Q.var1 == 'Example' && Q.var2 == 10 && Q.var3) {
 @eg_menu
 
 - #endings
+- @achievements
 - @end_game: End game.
 
 
@@ -27,6 +28,9 @@ tags: endings
 go-to: eg_menu
 
 You got the Example Ending!
+
+@acheivements
+view-if: ending_seen = 1
 
 = Completed Achievements in this Playthrough
 
