@@ -1,0 +1,6 @@
+(0..0) Dead
+(1..19) Starving
+(20..39) Hungry
+(40..59) Somewhat Hungry
+(60..79) Satisfied
+(80..100) Well-Fed
