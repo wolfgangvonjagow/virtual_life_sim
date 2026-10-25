@@ -40,8 +40,24 @@ Q.attribute_manipulation_locked = 0;
 // Locks when you are no longer a baby
 Q.occu_edu_unlocked = 0;
 Q.hobby_unlocked = 0;
-Q.starting_stress = 10;
+
+// Starting stats
+Q.stress = 10;
 Q.monthly_stress = 2;
+Q.hunger = 90
+Q.pop_score = 10
+Q.int_score = 10
+Q.ath_score = 10
+Q.lks_score = 10
+Q.luk_score = 10
+
+var stats = ["pop_score", "int_score", "ath_score", "lks_score", "luk_score"];
+var amounts = [15, 10, 5];
+
+for (var i = 0; i < amounts.length; i++) {
+    var pick = stats[Math.floor(Math.random() * stats.length)];
+    Q[pick] += amounts[i];
+}
 
 // friends
 Q.friends = ['friend1', 'friend2', 'friend3', 'friend4', 'friend5'];
