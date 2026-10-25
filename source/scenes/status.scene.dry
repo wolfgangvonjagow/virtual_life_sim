@@ -5,12 +5,16 @@ is-special: true
 = General Overview
 
 Date: [+ month : month +] [+ year +]
-Age: [+ month_age +][? if month_age = 1 : Month ?][? if month_age > 1 : Months ?][+ year_age +][? if year_age = 1 : Year ?][? if year_age > 1 or year_age = 0 : Years ?]
 
-Money available: [+ money +]
-Assets worth: [+ asset_money +]
-Money in savings: [+ savings_money +]
-Total Worth: [+ total_money +]
+Age: [+ month_age +][? if month_age = 1 : Month ?][? if month_age > 1 : Months ?], [+ year_age +][? if year_age = 1 : Year ?][? if year_age > 1 or year_age = 0 : Years ?]
+
+Money available: $[+ money +]
+
+Assets worth: $[+ asset_money +]
+
+Money in savings: $[+ savings_money +]
+
+Total Worth: $[+ total_money +]
 
 Job: [? if in_school : [+ school +]?][? if unemployed and not in_school: None ?][? if employed: [+ job +]?]
 
@@ -20,7 +24,7 @@ Stress: [+ stress : stress +] ([+ stress +]/100)
 
 Hunger: [+ hunger : hunger +]
 
-Rent: [? if paying_rent : [+ rent_cost +]?][? if not paying_rent : 0$ ?]
+Rent: [? if paying_rent : $[+ rent_cost +]?][? if not paying_rent : $0 ?]
 
 Popularity: [+ pop_score +]/100
 
