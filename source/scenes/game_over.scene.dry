@@ -18,7 +18,7 @@ if (Q.var1 == 'Example' && Q.var2 == 10 && Q.var3) {
 @eg_menu
 
 - #endings
-- @achievements
+- @achievements: View accomplished achievements
 - @end_game: End game.
 
 
