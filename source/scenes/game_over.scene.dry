@@ -29,7 +29,7 @@ go-to: eg_menu
 
 You got the Example Ending!
 
-@acheivements
+@achievements
 view-if: ending_seen = 1
 
 = Completed Achievements in this Playthrough
