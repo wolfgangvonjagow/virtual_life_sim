@@ -65,7 +65,7 @@ Luck: [+ luk_score +]/100
 
 [? if friend_5_filled : [+ friend5_name +]: [+ friend5_rel : relations +] Age: [+ friend5_age +]?]
 
-### Add Go-To-On-Click menus for each Friend and Family Member'
+### Add Go-To-On-Click menus for each Friend and Family Member
 
 @placeholder
 
