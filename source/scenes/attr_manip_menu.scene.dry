@@ -1,0 +1,59 @@
+title: Play Time 
+choose-if: attr_manip_actions < 3
+view-if: attribute_manipulation_unlocked and not attribute_manipulation_locked
+
+- @int
+- @luk
+- @pop
+- @ath
+- @lks
+
+@int
+title: Read A Book
+subtitle: This increases Intelligence
+choose-if: attr_manip_actions < 3
+on-arrival: int_score += 1; int_score += 1 if attr_manip_read >= 12; int_score += 1 if attr_manip_read >= 24; attr_manip_actions += 1; attr_manip_read += 1
+
+You read a book, and learn something 
+
+- @main
+
+@luk
+title: Play with toys
+subtitle: This increases Luck
+choose-if: attr_manip_actions < 3
+on-arrival: luk_score += 1; luk_score += 1 if attr_manip_toys >= 12; luk_score if attr_manip_toys >= 24; attr_manip_actions += 1; attr_manip_toys += 1
+
+You play with your toys
+
+- @main 
+
+@pop
+title: Watch the TV Show
+subtitle: This increases Popularity
+choose-if: attr_manip_actions < 3
+on-arrival: pop_score += 1; pop_score += 1 if attr_manip_tv >= 12; pop_score += 1 if attr_manip_tv >= 24; attr_manip_actions += 1; attr_manip_tv += 1
+
+You watch the latest TV Show
+
+- @main
+
+@ath
+title: Run around the house
+subtitle: This increases Atheleticism
+choose-if: attr_manip_actions < 3
+on-arrival: ath_score += 1; ath_score += 1 if attr_manip_run >= 12; ath_score += 1 if attr_manip_run >= 24; attr_manip_actions += 1; attr_manip_run += 1
+
+You run around the house
+
+- @main
+
+@lks
+title: Play dress-up with dolls
+subtitle: This increases Looks
+choose-if: attr_manip_actions < 3
+on-arrival: lks_score += 1; lks_score += 1 if attr_manip_dol >= 12; lks_score += 1 attr_manip_dol >= 24; attr_manip_actions += 1; attr_manip_dol += 1
+
+You dress-up your dolls in a new way
+
+- @main
