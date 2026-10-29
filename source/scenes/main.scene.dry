@@ -1,5 +1,7 @@
 title: Next month
 
+TEXT <stranger>TEXT</stranger> <acquaintance>TEXT</acquaintance> <friend>TEXT</friend> <close-friend>TEXT</close-friend> <partner-super-friend>TEXT</partner-super-friend>
+
 - @relations
 - @occu
 - @edu
